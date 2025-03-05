@@ -24,20 +24,25 @@ const ContainerMain = () => {
     <Box
       sx={{
         flexGrow: 1,
-        backgroundColor: loaded ? "transparent" : "rgb(21 22 26)",
-        filter: loaded ? "none" : "blur(10px)",
-        backgroundImage: loaded
-          ? `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(${dataDetails?.Images?.Background})`
-          : "rgb(21 22 26)",
-        backgroundSize: "cover",
-        backgroundPosition: "top",
-        transition: "background-image 0.5s ease-in-out",
-        zIndex: -1,
-        color: "white",
-        minHeight: "100vh",
       }}
     >
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+        sx={{
+          backgroundColor: loaded ? "transparent" : "rgb(21 22 26)",
+          filter: loaded ? "none" : "blur(10px)",
+          backgroundImage: loaded
+            ? `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(${dataDetails?.Images?.Background})`
+            : "rgb(21 22 26)",
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          transition: "background-image 0.5s ease-in-out",
+          zIndex: -1,
+          color: "white",
+          minHeight: "100vh",
+        }}
+      >
         <Grid
           size={{ xs: 12, md: 7, lg: 8 }}
           sx={{
