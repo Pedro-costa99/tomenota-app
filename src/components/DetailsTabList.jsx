@@ -29,7 +29,7 @@ const DetailsTabList = ({ Synopsis, Cast }) => {
           color: "white",
           justifyContent: "flex-start",
           "& .MuiTabs-scroller": {
-            borderBottom: "1px solid white",
+            borderBottom: "1px solid #B0B0B0",
           },
         }}
       >

@@ -17,4 +17,5 @@ html {
   background-color: #15161a;
   min-height: 100vh;
   font-family: "Comfortaa", sans-serif;
+  box-sizing: border-box;
 }

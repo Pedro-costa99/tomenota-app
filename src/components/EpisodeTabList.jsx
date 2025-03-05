@@ -40,7 +40,7 @@ const EpisodeTabList = () => {
       sx={{
         bgcolor: "background.paper",
         marginTop: "200px",
-        width: "90%",
+        width: { xs: "100%", md: "95%" },
         backgroundColor: "transparent",
       }}
     >
@@ -54,7 +54,7 @@ const EpisodeTabList = () => {
           marginLeft: -1,
           color: "white",
           "& .MuiTabs-scroller": {
-            borderBottom: "1px solid white",
+            borderBottom: "1px solid #B0B0B0",
           },
         }}
       >
@@ -78,7 +78,7 @@ const EpisodeTabList = () => {
               onClick={() => handleEpisodeClick(ep.ID)}
               sx={{
                 cursor: "pointer",
-                borderBottom: "1px solid #ddd",
+                borderBottom: "1px solid #B0B0B0",
                 flexDirection: "column",
                 display: "flex",
                 justifyContent: "space-between",

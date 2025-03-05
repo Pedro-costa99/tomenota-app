@@ -37,7 +37,7 @@ const ContainerMain = () => {
         minHeight: "100vh",
       }}
     >
-      <Grid container spacing={2} sx={{ height: "100vh" }}>
+      <Grid container spacing={2}>
         <Grid
           size={{ xs: 12, md: 7, lg: 8 }}
           sx={{
@@ -82,12 +82,12 @@ const ContainerMain = () => {
           spacing={4}
           size={{ xs: 12, md: 5, lg: 4 }}
           sx={{
-            justifyContent: "flex-start",
-            maxHeight: "100%",
+            justifyContent: { xs: "center", md: "flex-start" },
             overflowY: "auto",
+            height: "85vh",
           }}
         >
-          <Grid sx={{ backgroundColor: "transparent" }}>
+          <Grid sx={{ backgroundColor: "transparent", px: 2 }}>
             <EpisodeTabList />
           </Grid>
         </Grid>
