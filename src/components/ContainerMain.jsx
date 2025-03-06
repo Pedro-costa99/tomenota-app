@@ -89,7 +89,7 @@ const ContainerMain = () => {
           sx={{
             justifyContent: { xs: "center", md: "flex-start" },
             overflowY: "auto",
-            height: "85vh",
+            height: { xs: "50vh", md: "85vh" },
           }}
         >
           <Grid sx={{ backgroundColor: "transparent", px: 2 }}>

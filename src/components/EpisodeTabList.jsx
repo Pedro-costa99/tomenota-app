@@ -39,7 +39,7 @@ const EpisodeTabList = () => {
     <Box
       sx={{
         bgcolor: "background.paper",
-        marginTop: "200px",
+        marginTop: { md: "200px" },
         width: { xs: "100%", md: "95%" },
         backgroundColor: "transparent",
       }}
