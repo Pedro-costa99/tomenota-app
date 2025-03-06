@@ -11,7 +11,7 @@ import {
   Collapse,
   IconButton,
 } from "@mui/material";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
 
 const EpisodeTabList = () => {
   const [episodes, setEpisodes] = useState([]);
@@ -108,7 +108,7 @@ const EpisodeTabList = () => {
                     marginLeft: "auto",
                   }}
                 >
-                  <PlayArrowIcon />
+                  <PlayCircleOutlineIcon fontSize="large" />
                 </IconButton>
               </Box>
 
