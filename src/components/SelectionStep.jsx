@@ -36,7 +36,6 @@ const SelectionStep = ({ nextStep, prevStep }) => {
   return (
     <Box
       sx={{
-        padding: 2,
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",

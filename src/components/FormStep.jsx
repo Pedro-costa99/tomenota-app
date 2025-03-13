@@ -90,7 +90,7 @@ const FormStep = ({ nextStep, prevStep }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        p: 2
+        p: 2,
       }}
     >
       <Box
@@ -103,8 +103,21 @@ const FormStep = ({ nextStep, prevStep }) => {
           borderRadius: "20px",
         }}
       >
-        <Typography variant="h4" gutterBottom>
-          Complete seu cadastro
+        <Typography
+          variant="h4"
+          gutterBottom
+          sx={{
+            fontWeight: "600",
+            fontSize: "20px",
+            lineHeight: 1,
+            letterSpacing: 0,
+            verticalAlign: "middle",
+            textAlign: "center",
+            color: "#353535",
+            marginBottom: "2rem"
+          }}
+        >
+          Finalize o seu resgate
         </Typography>
         <form onSubmit={formik.handleSubmit}>
           <Typography
@@ -115,11 +128,11 @@ const FormStep = ({ nextStep, prevStep }) => {
               lineHeight: "1",
               letterSpacing: "0",
               color: "#353535",
-              marginBottom: "2rem",
+              marginBottom: "1rem",
             }}
             gutterBottom
           >
-            Dados do Destinatário
+            Dados do destinatário
           </Typography>
           <Grid2 container spacing={2}>
             <Grid2 item size={{ xs: 12 }}>
@@ -177,7 +190,7 @@ const FormStep = ({ nextStep, prevStep }) => {
               lineHeight: "1",
               letterSpacing: "0",
               color: "#353535",
-              marginBottom: "2rem",
+              marginBottom: "1rem",
               marginTop: "2rem",
             }}
           >
@@ -325,7 +338,7 @@ const FormStep = ({ nextStep, prevStep }) => {
               lineHeight: "1",
               letterSpacing: "0",
               color: "#353535",
-              marginBottom: "2rem",
+              marginBottom: "1rem",
               marginTop: "2rem",
             }}
           >
@@ -361,7 +374,7 @@ const FormStep = ({ nextStep, prevStep }) => {
               lineHeight: "1",
               letterSpacing: "0",
               color: "#353535",
-              marginBottom: "2rem",
+              marginBottom: "1rem",
               marginTop: "2rem",
             }}
           >
@@ -443,30 +456,51 @@ const FormStep = ({ nextStep, prevStep }) => {
                   formik.touched.habilidades && formik.errors.habilidades
                 }
                 slotProps={{
-                  multiple: true,
-                  renderValue: (selected) => (
-                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                      {selected.map((value) => (
-                        <Chip
-                          key={value}
-                          label={value}
-                          onDelete={(e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                            const newHabilidades =
-                              formik.values.habilidades.filter(
-                                (item) => item !== value
+                  select: {
+                    multiple: true,
+                    renderValue: (selected) => (
+                      <Box
+                        sx={{
+                          display: "flex",
+                          flexWrap: "wrap",
+                          gap: 0.5,
+                          alignItems: "center",
+                        }}
+                      >
+                        {selected.map((value) => (
+                          <Chip
+                            key={value}
+                            label={value}
+                            size="small"
+                            onDelete={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                              const newHabilidades =
+                                formik.values.habilidades.filter(
+                                  (item) => item !== value
+                                );
+                              formik.setFieldValue(
+                                "habilidades",
+                                newHabilidades
                               );
-                            formik.setFieldValue("habilidades", newHabilidades);
-                          }}
-                          onMouseDown={(e) => {
-                            e.preventDefault();
-                            e.stopPropagation();
-                          }}
-                        />
-                      ))}
-                    </Box>
-                  ),
+                            }}
+                            onMouseDown={(e) => {
+                              e.preventDefault();
+                              e.stopPropagation();
+                            }}
+                            sx={{
+                              fontSize: "15px",
+                            }}
+                          />
+                        ))}
+                      </Box>
+                    ),
+                    MenuProps: {
+                      PaperProps: {
+                        onClick: (e) => e.stopPropagation(),
+                      },
+                    },
+                  },
                 }}
               >
                 {habilidades.map((habilidade) => (
