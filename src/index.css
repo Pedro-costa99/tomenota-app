@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 
 :root {
-  font-family: "Comfortaa", sans-serif !important;
-  line-height: 1.5;
-  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -13,9 +10,9 @@
 body,
 html {
   margin: 0;
+  padding: 0;
   background: #15161a;
   background-color: #15161a;
   min-height: 100vh;
-  font-family: "Comfortaa", sans-serif;
   box-sizing: border-box;
 }

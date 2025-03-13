@@ -1,7 +1,8 @@
 {
-  "homepage": "https://Pedro-costa99.github.io/my-app-agiletv",
-  "name": "my-app-agiletv",
+  "homepage": "https://Pedro-costa99.github.io/redemption-app",
+  "name": "redemption-app",
   "private": true,
+  "author": "Pedro Canabrava",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -15,12 +16,17 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.6",
-    "@mui/material": "^6.4.6",
+    "@mui/icons-material": "^6.4.7",
+    "@mui/lab": "^6.0.0-beta.30",
+    "@mui/material": "^6.4.7",
+    "@mui/x-date-pickers": "^7.27.3",
     "axios": "^1.8.1",
+    "dayjs": "^1.11.13",
+    "formik": "^2.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sass": "^1.85.1"
+    "sass": "^1.85.1",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

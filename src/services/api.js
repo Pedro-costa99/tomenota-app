@@ -1,13 +1,19 @@
 import axios from "axios";
 
-const BASE_URL = "https://agile-releases.s3.us-east-1.amazonaws.com/tests";
-
-export const fetchShowDetails = async () => {
-    const response = await axios.get(`${BASE_URL}/tv-shows/SHOW123.json`);
-    return response.data;
+const baseURL = "https://example.com/api/v1";
+const headers = {
+    Accept: "application/json",
+    Authorization: "Basic XXX"
 };
 
-export const fetchEpisodes = async () => {
-    const response = await axios.get(`${BASE_URL}/episodes/SHOW123.json`);
-    return response.data;
+export const getShipments = async () => {
+    try {
+        const response = await axios.get(`${baseURL}/shipments`, {
+            headers
+        });
+        return response.data;
+    } catch (error) {
+        console.error("Erro ao buscar os envios", error);
+        throw error;
+    }
 };

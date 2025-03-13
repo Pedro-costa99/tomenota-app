@@ -1,12 +1,11 @@
 import React from "react";
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
-import ContainerMain from "./components/ContainerMain";
+import ResgatesApp from "./components/RedemptionApp";
 // import "./styles/main.scss";
 
 const theme = createTheme({
   typography: {
-    fontFamily: '"Comfortaa", sans-serif',
-    fontWeight: "300",
+    fontFamily: '"Open Sans", sans-serif',
   },
 });
 
@@ -14,7 +13,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <ContainerMain />
+      <ResgatesApp />
     </ThemeProvider>
   );
 };
