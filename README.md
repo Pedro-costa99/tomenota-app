@@ -1,6 +1,6 @@
-# 🚀 Empresa X test
-
-- Interface de usuário criada para processo seletivo da empresa X, feita com **React + Vite**, **MUI**, **Axios**, e outros.
+# 🚀 App Tomenota
+- O Tomenota é uma ferramenta que permite capturar e extrair texto de imagens, funcionando como um bloco de notas inteligente com suporte a OCR (reconhecimento óptico de caracteres).
+- Feito com **React + Vite**, **Tailwind**, **Axios**, e outros.
 - Este é um projeto **ReactJS** criado com `npm create vite@latest`.
 - Para executá-lo, é necessário ter **Node.js 18+ ou 20+**. Consulte Doc Vite.dev.
 
@@ -9,7 +9,7 @@
 ## 🚀 Tecnologias Utilizadas
 
 - **React + Vite**
-- **MUI (Material-UI)**
+- **Tailwind**
 - **Yup**
 - **Formik**
 
@@ -19,8 +19,8 @@
 
 ### 1️⃣ Clone o repositório
 
-- `git clone https://github.com/Pedro-costa99/redemption-app.git`
-- `cd redemption-app`
+- `git clone https://github.com/Pedro-costa99/tomenota-app.git`
+- `cd tomenota-app`
 - `code .`
 
 ### 2️⃣ Instale as dependências
@@ -36,29 +36,27 @@
 
 ## ✅ Funcionalidades
 
-- Interface dinâmica e responsiva para resgate de presentes (versão 01).
-- Design moderno com **Material-UI** para melhor experiência do usuário.
+- Upload ou captura de imagem para extração de texto.
+- Ideal para estudantes, profissionais ou qualquer pessoa que queira guardar anotações digitais rapidamente.
 - Atenção: as imagens anexas podem estar desatualizadas, consulte estado atual do app no link disponível.
+
+## 🔍 Em desenvolvimento
+
+- Integração com plugin ou API de OCR (como Tesseract.js ou plugin de navegador).
+- Sistema de histórico de anotações.
+- Exportação de textos para PDF ou Markdown.
+- Modo escuro / claro.
+- Atenção: as imagens anexas podem estar desatualizadas, consulte estado atual do app no link disponível.
+
+
 
 ---
 
 ## Licença 📜
 
-- Este projeto foi desenvolvido exclusivamente para o processo seletivo da empresa **X** e não possui uma licença pública.
+- Este projeto não possui uma licença pública.
 
 ---
 
-## 🖥️ UI Implementada - PC
 
-![UI implementada - PC](public/images/pc_01.png)
-![UI implementada - PC](public/images/pc_02.png)
-![UI implementada - PC](public/images/pc_03.png)
-![UI implementada - PC](public/images/pc_04.png)
-
-## 📱 UI Implementada - Mobile
-
-![UI Implementada - Mobile](public/images/mobile_01.png)
-![UI Implementada - Mobile](public/images/mobile_02.png)
-![UI Implementada - Mobile](public/images/mobile_03.png)
-![UI Implementada - Mobile](public/images/mobile_04.png)
 

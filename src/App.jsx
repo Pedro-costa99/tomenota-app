@@ -1,21 +1,14 @@
 import React from "react";
-import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
-import ResgatesApp from "./components/RedemptionApp";
-// import "./styles/main.scss";
+import TakeNoteApp from "./components/TakeNoteApp";
+import "./App.css"; 
 
-const theme = createTheme({
-  typography: {
-    fontFamily: '"Open Sans", sans-serif',
-  },
-});
+
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <ResgatesApp />
-    </ThemeProvider>
+    <div className="bg-gray-100 min-h-screen font-sans">
+      <TakeNoteApp />
+    </div>
   );
 };
-
 export default App;

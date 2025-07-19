@@ -6,9 +6,9 @@ const headers = {
     Authorization: "Basic XXX"
 };
 
-export const getShipments = async () => {
+export const getTest = async () => {
     try {
-        const response = await axios.get(`${baseURL}/shipments`, {
+        const response = await axios.get(`${baseURL}/test`, {
             headers
         });
         return response.data;

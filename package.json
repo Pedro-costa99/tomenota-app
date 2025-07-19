@@ -1,6 +1,6 @@
 {
-  "homepage": "https://Pedro-costa99.github.io/redemption-app",
-  "name": "redemption-app",
+  "homepage": "https://Pedro-costa99.github.io/tomenota-app",
+  "name": "tomenota-app",
   "private": true,
   "author": "Pedro Canabrava",
   "version": "0.0.0",
@@ -20,12 +20,15 @@
     "@mui/lab": "^6.0.0-beta.30",
     "@mui/material": "^6.4.7",
     "@mui/x-date-pickers": "^7.27.3",
+    "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.8.1",
     "dayjs": "^1.11.13",
     "formik": "^2.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.85.1",
+    "tailwindcss": "^4.1.11",
+    "tesseract.js": "^6.0.1",
     "yup": "^1.6.1"
   },
   "devDependencies": {
